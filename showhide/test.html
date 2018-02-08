@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show Hide</title>
+
+</head>
+
+<body>
+    <div id="content">Nội dung cần hien/an</div>
+    <button type="submit" id="btn-hide">HIDE</button>
+    <button type="submit" id="btn-show">SHOW</button>
+
+    <script>
+        var $ = function(id) {
+            var a = document.getElementById(id);
+            show = function() {
+                return a.style.display = "block";
+            }
+            hide = function() {
+                return a.style.display = "none";
+            }
+            click = function(call) {
+                a.onclick = call;
+            }
+            return this;
+        }
+        $("btn-hide").click(function() {
+            $("content").hide();
+        });
+        $("btn-show").click(function() {
+            $("content").show();
+        });
+    </script>
+
+
+</body>
+
+</html>

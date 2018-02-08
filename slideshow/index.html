@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="slideshow-jquery.js">	</script>
+	<script src="jquery-1.4.2.min.js"></script>
+	<title>Slideshow</title>
+</head>
+
+<body>
+	<div id="wrap-slide">
+		<div id="slideshow">
+			<ul>
+				<li class="current"><img src="img/image1.jpg"></li>
+				<li><img src="img/image2.jpg"></li>
+				<li><img src="img/image3.jpg"></li>
+				<li><img src="img/image4.jpg"></li>
+			</ul>
+			<span id="prev">Prev</span> <span id="next">Next</span>
+			<p id="controlNav"></p>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function() {
+			vk_slideshow(5000);
+		});
+	</script>
+</body>
+
+</html>
