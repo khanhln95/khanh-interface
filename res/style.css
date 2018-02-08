@@ -168,7 +168,9 @@ header {
   font-size: 1.5rem;
   text-align: left;
 }
-
+.owl-theme .owl-nav{
+	display: none;
+}
 #header-mid {
   float: left;
   height: auto;
@@ -225,7 +227,6 @@ header {
 }
 
 #post .mid-shoe, #post .mid-bag, #post .mid-clo {
-  /*width: 32%;*/
   display: none;
   height: 215px;
   background-image: url(./img/sp1.jpg);
@@ -449,9 +450,7 @@ header {
   color: #4c4c4c;
   font-size: 15px;
 }
-.owl-theme .owl-nav{
-	display: none;
-}
+
 #mid-content .bn-bag .img-bag {
   background-image: url(./img/bn2.jpg);
 }
@@ -467,10 +466,6 @@ header {
   height: 1px;
   background-color: black;
 }
-
-/*#mid-content .col-md-2 {
-  width: 20%;
-}*/
 
 #mid-content .sell {
   margin-top: 20px;
@@ -504,7 +499,6 @@ header {
 #mid-content .sell .img-sp .saler .sale {
   padding: 5px 9px;
   background-color: #0074bd;
-  /*margin-top: 5px;*/
 }
 
 #mid-content .sell .img-sp .hover {
@@ -629,7 +623,6 @@ header {
 #mid-content .blog {
   float: left;
   height: auto;
-  /*width: 100%;*/
   font-family: font-bol;
 }
 
@@ -639,7 +632,6 @@ header {
   padding: 0 20px;
   float: left;
   height: auto;
-  /*width: 100%;*/
   text-align: center;
 }
 
@@ -959,8 +951,19 @@ footer .footer-logo img {
   left: 0;
   width: 100%;
   z-index: 100;
-<<<<<<< HEAD
 }
-=======
+
+#result {
+  position: absolute;
+  width: 92%;
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 400px;
+  box-sizing: border-box;
+  z-index: 1001;
+  color: black;
 }
->>>>>>> 877b3e511fd0096cd8b264cd2c1997ca3c3983b9
+
+.link-class:hover {
+  background-color: #f1f1f1;
+}
